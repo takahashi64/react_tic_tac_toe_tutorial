@@ -23,7 +23,7 @@ class Board extends React.Component {
     // We call .slice() to copy the squares array instead of mutating the existing array
     const squares = this.state.squares.slice();
     
-    if (calculateWinner(squares)) {
+    if (calculateWinner(squares) || squares[i]) {
       return;
     }
 
